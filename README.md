@@ -10,7 +10,7 @@
   <br />
   <a href="https://github.com/andres-merino/MOOC-matematica/issues">Reportar problemas</a>
   <br /><br />
-  <a href="https://fcena-puce.github.io/MOOC-matematica/">
+  <a href="https://andres-merino.github.io/MOOC-matematica">
     <img src="https://img.shields.io/badge/Ir%20al%20sitio-0078D4?logo=githubpages&logoColor=fff&style=for-the-badge" alt="GitHub Pages Badge">
   </a>
 </p>
