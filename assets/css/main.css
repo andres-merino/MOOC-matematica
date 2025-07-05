@@ -1,3 +1,6 @@
+/* Importar estilos específicos para ejercicios interactivos */
+@import url('ejercicios-interactivos.css');
+
 :root {
     --primary-color: #134383;
     --secondary-color: #666;

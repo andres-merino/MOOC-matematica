@@ -1,0 +1,387 @@
+---
+layout: page
+title: Operaciones con Fracciones Algebraicas
+---
+
+<h2>Operaciones con Fracciones Algebraicas</h2>
+
+<div class="note">
+    En esta sección aprenderás a realizar operaciones básicas con fracciones algebraicas de manera paso a paso.
+</div>
+
+<div class="exercise-container">
+    <!-- Suma con mismo denominador -->
+    <div class="exercise-card">
+        <h3>Suma de fracciones algebraicas con el mismo denominador</h3>
+        <div class="problem">
+            <p><strong>Problema:</strong> Sumemos:</p>
+            <div class="math-expression">
+                $$\frac{6}{2x^2 - 7} + \frac{-3x - 8}{2x^2 - 7}$$
+            </div>
+        </div>
+        
+        <div class="solution">
+            <button class="step-btn" onclick="showStep('suma1', 1)">Ver Paso 1</button>
+            <div id="suma1-step1" class="step-content" style="display: none;">
+                <p><strong>Paso 1:</strong> Como ambas fracciones tienen el mismo denominador, conservamos el denominador y sumamos los numeradores:</p>
+                <div class="math-expression">
+                    $$\frac{6 + (-3x - 8)}{2x^2 - 7}$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('suma1', 2)" style="display: none;">Ver Paso 2</button>
+            <div id="suma1-step2" class="step-content" style="display: none;">
+                <p><strong>Paso 2:</strong> Simplificamos el numerador:</p>
+                <div class="math-expression">
+                    $$6 + (-3x - 8) = 6 - 3x - 8 = -2 - 3x$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('suma1', 3)" style="display: none;">Ver Solución Final</button>
+            <div id="suma1-step3" class="step-content" style="display: none;">
+                <p><strong>Resultado final:</strong></p>
+                <div class="math-expression result">
+                    $$\frac{6}{2x^2 - 7} + \frac{-3x - 8}{2x^2 - 7} = \frac{-2 - 3x}{2x^2 - 7}$$
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resta con mismo denominador -->
+    <div class="exercise-card">
+        <h3>Resta de fracciones algebraicas con el mismo denominador</h3>
+        <div class="problem">
+            <p><strong>Problema:</strong> Restemos:</p>
+            <div class="math-expression">
+                $$\frac{9x^2 + 3}{14x^2 - 9} - \frac{-3x^2 + 5}{14x^2 - 9}$$
+            </div>
+        </div>
+        
+        <div class="solution">
+            <button class="step-btn" onclick="showStep('resta1', 1)">Ver Paso 1</button>
+            <div id="resta1-step1" class="step-content" style="display: none;">
+                <p><strong>Paso 1:</strong> El denominador es el mismo, conservamos el denominador y restamos los numeradores:</p>
+                <div class="math-expression">
+                    $$\frac{(9x^2 + 3) - (-3x^2 + 5)}{14x^2 - 9}$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta1', 2)" style="display: none;">Ver Paso 2</button>
+            <div id="resta1-step2" class="step-content" style="display: none;">
+                <p><strong>Paso 2:</strong> Distribuimos el signo negativo:</p>
+                <div class="math-expression">
+                    $$(9x^2 + 3) - (-3x^2 + 5) = 9x^2 + 3 + 3x^2 - 5$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta1', 3)" style="display: none;">Ver Paso 3</button>
+            <div id="resta1-step3" class="step-content" style="display: none;">
+                <p><strong>Paso 3:</strong> Agrupamos términos semejantes:</p>
+                <div class="math-expression">
+                    $$= (9x^2 + 3x^2) + (3 - 5) = 12x^2 - 2$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta1', 4)" style="display: none;">Ver Solución Final</button>
+            <div id="resta1-step4" class="step-content" style="display: none;">
+                <p><strong>Resultado final:</strong></p>
+                <div class="math-expression result">
+                    $$\frac{9x^2 + 3}{14x^2 - 9} - \frac{-3x^2 + 5}{14x^2 - 9} = \frac{12x^2 - 2}{14x^2 - 9}$$
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suma con diferente denominador -->
+    <div class="exercise-card">
+        <h3>Suma de fracciones algebraicas con diferente denominador</h3>
+        <div class="problem">
+            <p><strong>Problema:</strong> Sumemos:</p>
+            <div class="math-expression">
+                $$\frac{-5x}{8x + 7} + \frac{-6x^3}{3x + 1}$$
+            </div>
+        </div>
+        
+        <div class="solution">
+            <button class="step-btn" onclick="showStep('suma2', 1)">Ver Paso 1</button>
+            <div id="suma2-step1" class="step-content" style="display: none;">
+                <p><strong>Paso 1:</strong> Determinamos el mínimo común denominador:</p>
+                <div class="math-expression">
+                    $$(8x + 7)(3x + 1)$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('suma2', 2)" style="display: none;">Ver Paso 2</button>
+            <div id="suma2-step2" class="step-content" style="display: none;">
+                <p><strong>Paso 2:</strong> Reescribimos ambas fracciones con el denominador común:</p>
+                <div class="math-expression">
+                    $$\frac{-5x(3x + 1)}{(8x + 7)(3x + 1)} + \frac{(8x + 7)(-6x^3)}{(8x + 7)(3x + 1)}$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('suma2', 3)" style="display: none;">Ver Paso 3</button>
+            <div id="suma2-step3" class="step-content" style="display: none;">
+                <p><strong>Paso 3:</strong> Desarrollamos los numeradores:</p>
+                <div class="math-expression">
+                    $$-5x(3x + 1) = -15x^2 - 5x$$
+                    $$(8x + 7)(-6x^3) = -48x^4 - 42x^3$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('suma2', 4)" style="display: none;">Ver Paso 4</button>
+            <div id="suma2-step4" class="step-content" style="display: none;">
+                <p><strong>Paso 4:</strong> Sumamos los numeradores:</p>
+                <div class="math-expression">
+                    $$(-15x^2 - 5x) + (-48x^4 - 42x^3) = -48x^4 - 42x^3 - 15x^2 - 5x$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('suma2', 5)" style="display: none;">Ver Solución Final</button>
+            <div id="suma2-step5" class="step-content" style="display: none;">
+                <p><strong>Resultado final:</strong></p>
+                <div class="math-expression result">
+                    $$\frac{-5x}{8x + 7} + \frac{-6x^3}{3x + 1} = \frac{-48x^4 - 42x^3 - 15x^2 - 5x}{(8x + 7)(3x + 1)}$$
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resta con denominadores factorizables -->
+    <div class="exercise-card">
+        <h3>Resta de fracciones algebraicas con denominadores factorizables</h3>
+        <div class="problem">
+            <p><strong>Problema:</strong> Restemos:</p>
+            <div class="math-expression">
+                $$\frac{a - 2}{a + 2} - \frac{a - 3}{a^2 + 4a + 4}$$
+            </div>
+        </div>
+        
+        <div class="solution">
+            <button class="step-btn" onclick="showStep('resta2', 1)">Ver Paso 1</button>
+            <div id="resta2-step1" class="step-content" style="display: none;">
+                <p><strong>Paso 1:</strong> Factorizamos el segundo denominador:</p>
+                <div class="math-expression">
+                    $$a^2 + 4a + 4 = (a + 2)^2$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta2', 2)" style="display: none;">Ver Paso 2</button>
+            <div id="resta2-step2" class="step-content" style="display: none;">
+                <p><strong>Paso 2:</strong> Determinamos el mínimo común denominador:</p>
+                <div class="math-expression">
+                    $$(a + 2)^2$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta2', 3)" style="display: none;">Ver Paso 3</button>
+            <div id="resta2-step3" class="step-content" style="display: none;">
+                <p><strong>Paso 3:</strong> Reescribimos ambas fracciones con el denominador común:</p>
+                <div class="math-expression">
+                    $$\frac{(a - 2)(a + 2)}{(a + 2)^2} - \frac{a - 3}{(a + 2)^2}$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta2', 4)" style="display: none;">Ver Paso 4</button>
+            <div id="resta2-step4" class="step-content" style="display: none;">
+                <p><strong>Paso 4:</strong> Desarrollamos el numerador de la primera fracción:</p>
+                <div class="math-expression">
+                    $$(a - 2)(a + 2) = a^2 - 4$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta2', 5)" style="display: none;">Ver Paso 5</button>
+            <div id="resta2-step5" class="step-content" style="display: none;">
+                <p><strong>Paso 5:</strong> Realizamos la resta de numeradores:</p>
+                <div class="math-expression">
+                    $$(a^2 - 4) - (a - 3) = a^2 - 4 - a + 3 = a^2 - a - 1$$
+                </div>
+            </div>
+            
+            <button class="step-btn" onclick="showStep('resta2', 6)" style="display: none;">Ver Solución Final</button>
+            <div id="resta2-step6" class="step-content" style="display: none;">
+                <p><strong>Resultado final:</strong></p>
+                <div class="math-expression result">
+                    $$\frac{a - 2}{a + 2} - \frac{a - 3}{a^2 + 4a + 4} = \frac{a^2 - a - 1}{(a + 2)^2}$$
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+// Variables globales para tracking del progreso
+const exerciseProgress = {
+    'suma1': 0,
+    'resta1': 0,
+    'suma2': 0,
+    'resta2': 0
+};
+
+function showStep(exerciseId, stepNumber) {
+    // Mostrar el paso actual
+    const currentStep = document.getElementById(exerciseId + '-step' + stepNumber);
+    currentStep.style.display = 'block';
+    
+    // Ocultar el botón actual
+    const currentButton = currentStep.previousElementSibling;
+    currentButton.style.display = 'none';
+    
+    // Mostrar el siguiente botón si existe
+    const nextButton = currentStep.nextElementSibling;
+    if (nextButton && nextButton.classList.contains('step-btn')) {
+        nextButton.style.display = 'inline-block';
+    }
+    
+    // Actualizar progreso
+    exerciseProgress[exerciseId] = stepNumber;
+    updateProgressIndicator(exerciseId, stepNumber);
+    
+    // Efecto de confeti si es el último paso
+    if (currentStep.querySelector('.result')) {
+        celebrateCompletion();
+    }
+    
+    // Renderizar las matemáticas con MathJax
+    if (window.MathJax) {
+        MathJax.typesetPromise([currentStep]).then(() => {
+            // Scroll suave al contenido nuevo
+            currentStep.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
+            });
+        }).catch((err) => console.log(err.message));
+    }
+}
+
+function updateProgressIndicator(exerciseId, currentStep) {
+    const progressContainer = document.querySelector(`[data-exercise="${exerciseId}"] .progress-indicator`);
+    if (progressContainer) {
+        const dots = progressContainer.querySelectorAll('.progress-dot');
+        dots.forEach((dot, index) => {
+            if (index < currentStep) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+}
+
+function celebrateCompletion() {
+    // Crear efecto de confeti simple
+    const colors = ['#134383', '#28a745', '#ffc107', '#17a2b8'];
+    for (let i = 0; i < 50; i++) {
+        createConfetti(colors[Math.floor(Math.random() * colors.length)]);
+    }
+}
+
+function createConfetti(color) {
+    const confetti = document.createElement('div');
+    confetti.style.cssText = `
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background: ${color};
+        top: -10px;
+        left: ${Math.random() * window.innerWidth}px;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        animation: confettiFall 3s ease-out forwards;
+    `;
+    
+    document.body.appendChild(confetti);
+    
+    setTimeout(() => {
+        confetti.remove();
+    }, 3000);
+}
+
+// Agregar animación CSS para el confeti
+if (!document.querySelector('#confetti-style')) {
+    const style = document.createElement('style');
+    style.id = 'confetti-style';
+    style.textContent = `
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(-10px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(${window.innerHeight + 20}px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
+
+// Función para reiniciar un ejercicio
+function resetExercise(exerciseId) {
+    const steps = document.querySelectorAll(`[id^="${exerciseId}-step"]`);
+    const buttons = document.querySelectorAll(`[onclick*="${exerciseId}"]`);
+    
+    // Ocultar todos los pasos
+    steps.forEach(step => step.style.display = 'none');
+    
+    // Mostrar solo el primer botón
+    buttons.forEach((button, index) => {
+        button.style.display = index === 0 ? 'inline-block' : 'none';
+    });
+    
+    // Resetear progreso
+    exerciseProgress[exerciseId] = 0;
+    updateProgressIndicator(exerciseId, 0);
+}
+
+// Inicializar indicadores de progreso cuando carga la página
+document.addEventListener('DOMContentLoaded', function() {
+    // Agregar indicadores de progreso a cada ejercicio
+    const exercises = document.querySelectorAll('.exercise-card');
+    exercises.forEach((exercise, index) => {
+        const exerciseIds = ['suma1', 'resta1', 'suma2', 'resta2'];
+        const exerciseId = exerciseIds[index];
+        const maxSteps = exercise.querySelectorAll('.step-content').length;
+        
+        // Agregar atributo data para identificar el ejercicio
+        exercise.setAttribute('data-exercise', exerciseId);
+        
+        // Crear indicador de progreso
+        const progressDiv = document.createElement('div');
+        progressDiv.className = 'progress-indicator';
+        progressDiv.innerHTML = Array(maxSteps).fill(0).map(() => 
+            '<div class="progress-dot"></div>'
+        ).join('');
+        
+        // Insertar después del título
+        const title = exercise.querySelector('h3');
+        title.parentNode.insertBefore(progressDiv, title.nextSibling);
+        
+        // Agregar botón de reinicio
+        const resetBtn = document.createElement('button');
+        resetBtn.className = 'step-btn reset-btn';
+        resetBtn.innerHTML = '🔄 Reiniciar Ejercicio';
+        resetBtn.onclick = () => resetExercise(exerciseId);
+        resetBtn.style.background = 'linear-gradient(135deg, #6c757d, #495057)';
+        resetBtn.style.marginTop = '15px';
+        
+        exercise.querySelector('.solution').appendChild(resetBtn);
+    });
+});
+</script>
+
+<!-- MathJax para renderizar las matemáticas -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

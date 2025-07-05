@@ -1,0 +1,335 @@
+/* Estilos generales para ejercicios interactivos del MOOC */
+
+/* Variables CSS para facilitar el mantenimiento */
+:root {
+    --primary-blue: #134383;
+    --secondary-blue: #1e5aa0;
+    --dark-blue: #0f2f5a;
+    --light-blue: #e7f3ff;
+    --success-green: #28a745;
+    --light-green: #e8f5e8;
+    --warning-yellow: #ffc107;
+    --light-yellow: #fff3cd;
+    --danger-red: #dc3545;
+    --light-red: #f8d7da;
+    --background-gray: #f8f9fa;
+    --border-gray: #e0e0e0;
+    --text-dark: #333;
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --shadow-heavy: 0 6px 20px rgba(0, 0, 0, 0.2);
+    --gradient-primary: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    --gradient-success: linear-gradient(135deg, var(--success-green), #20c997);
+    --gradient-background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+/* Contenedor principal de ejercicios */
+.exercise-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--gradient-background);
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+}
+
+/* Tarjetas de ejercicios */
+.exercise-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border: 1px solid var(--border-gray);
+    border-radius: 12px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.exercise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: 12px 12px 0 0;
+}
+
+.exercise-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Títulos de ejercicios */
+.exercise-card h3 {
+    color: var(--primary-blue);
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, rgba(19, 67, 131, 0.08), rgba(30, 90, 160, 0.08));
+    border-radius: 8px;
+    border: 1px solid rgba(19, 67, 131, 0.15);
+}
+
+/* Sección del problema */
+.problem {
+    background: linear-gradient(135deg, var(--light-blue), #f0f8ff);
+    border: 1px solid var(--primary-blue);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.problem::before {
+    content: '🎯';
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background: var(--primary-blue);
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 0.9em;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.problem p {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 1em;
+    padding-left: 10px;
+}
+
+/* Expresiones matemáticas */
+.math-expression {
+    text-align: center;
+    margin: 1px 0;
+    padding: 1px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid var(--border-gray);
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+.math-expression:hover {
+    border-color: var(--primary-blue);
+}
+
+.math-expression.result {
+    background: var(--gradient-success);
+    border: 2px solid var(--success-green);
+    color: white;
+    font-weight: bold;
+    box-shadow: var(--shadow-medium);
+}
+
+/* Sección de solución */
+.solution {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+/* Botones de pasos */
+.step-btn {
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 8px 6px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.step-btn:hover {
+    background: linear-gradient(135deg, var(--dark-blue), var(--primary-blue));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.step-btn:active {
+    transform: translateY(0px);
+}
+
+/* Eliminar iconos específicos para botones */
+
+/* Contenido de pasos */
+.step-content {
+    background: linear-gradient(135deg, #ffffff, var(--background-gray));
+    border-radius: 8px;
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 3px solid var(--success-green);
+    box-shadow: var(--shadow-light);
+    animation: slideInFade 0.4s ease-out;
+}
+
+@keyframes slideInFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.step-content p {
+    margin: 0 0 10px 0;
+    color: var(--text-dark);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.step-content strong {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+/* Elementos destacados */
+.highlight {
+    background: linear-gradient(120deg, var(--light-yellow), #fff8dc);
+    border: 2px solid var(--warning-yellow);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: var(--shadow-light);
+    animation: highlightGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes highlightGlow {
+    from { box-shadow: var(--shadow-light); }
+    to { box-shadow: 0 0 20px rgba(255, 193, 7, 0.3); }
+}
+
+/* Notas adicionales */
+.note {
+    background: linear-gradient(135deg, var(--light-blue), #f0f8ff);
+    border: 2px solid var(--primary-blue);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    box-shadow: var(--shadow-light);
+}
+
+.note::before {
+    content: "💡";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: var(--primary-blue);
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 1.1em;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Indicadores de progreso - ocultos */
+.progress-indicator {
+    display: none;
+}
+
+/* Simplificar efectos decorativos */
+
+/* Diseño responsivo mejorado */
+@media (max-width: 768px) {
+    .exercise-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .exercise-card {
+        padding: 15px;
+        margin: 12px 0;
+    }
+    
+    .exercise-card h3 {
+        font-size: 1.2em;
+        padding: 8px 12px;
+    }
+    
+    .step-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin: 6px 4px;
+        display: block;
+        width: calc(100% - 8px);
+        text-align: center;
+    }
+    
+    .math-expression {
+        font-size: 1em;
+        padding: 12px;
+        margin: 12px 0;
+    }
+    
+    .problem, .step-content {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .exercise-container {
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .exercise-card {
+        padding: 12px;
+    }
+    
+    .exercise-card h3 {
+        font-size: 1.1em;
+        padding: 8px;
+    }
+    
+    .step-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+    
+    .math-expression {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+/* Animación de entrada simplificada */
+.exercise-container {
+    animation: pageEnter 0.5s ease-out;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Eliminar efecto shimmer complejo */
